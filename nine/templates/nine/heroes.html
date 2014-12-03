@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heroes</title>
+</head>
+<body>
+  <table>
+    <tr>
+   {% for title in titles %}
+    <th>{{ title }}</th>
+   {% endfor %}
+    </tr>
+  {% for heroes in data %}
+    <tr>
+    <td>{{ heroes.0 }}</td>
+    <td>{{ heroes.1 }}</td>
+    <td>{{ heroes.2 }}</td>
+    <td>{{ heroes.3 }}</td>
+    <td>{{ heroes.4 }}</td>
+    </tr>
+  {% endfor %}
+  </table>
+</body>
+</html>
